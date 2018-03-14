@@ -1,0 +1,44 @@
+/*MAIN DIV */
+
+.project-container {
+    display: block;
+    width: 100%;
+}
+
+
+/*/SUB DIV: HOLD EACH PROJECT*/
+
+.project-container-item div {
+    width: 40%;
+}
+
+
+/*CONTENT FLOAT LEFT*/
+
+.project-content-left {
+    padding-top: 10em;
+    padding-left: 1em;
+    float: left;
+}
+
+.project-content-left img {
+    width: 30em;
+}
+
+/*CONTENT FLOAT RIGHT*/
+
+.project-content-right {
+    float: right;
+    padding-right: 1em;
+    padding-top: 18em;
+}
+
+.project-content-right img {
+    float: right;
+    width: 40em;
+}
+
+
+.project-content-right p {
+    text-align: justify;
+}

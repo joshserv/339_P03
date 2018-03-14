@@ -1,0 +1,185 @@
+/*LOAD STYLESHEETS*/
+
+@import url("header.css");
+@import url("landing.css");
+
+/*PAGE SPECIFIC STYLESHEET*/
+
+@import url("off-white-series.css");
+
+/*GOOGLE FONTS*/
+
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400');
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
+
+/*PERSONAL FONTS*/
+
+@font-face {
+    font-family: 'Source Sans';
+    src: url("css/fonts/Source-Sans-Pro.otf");
+
+    font-family: 'Courier';
+    src: url("css/fonts/Courier_New.ttf");
+
+    font-family: 'Adobe Garamond';
+    src: url("css/fonts/AGaramondPro-Regular.otf");
+}
+
+
+
+body {
+    font-family: 'Cutive Mono', monospace;
+}
+
+
+
+header {
+    padding-bottom: 2rem;
+    clear: both;
+}
+
+h1,
+h2 {
+    font-family: Helvetica;
+    color: black;
+}
+
+h2 {
+    font-size: 16px;
+}
+
+h3 {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+p {
+    font-size: 14px;
+}
+
+
+a {
+    font-size: 14px;
+}
+
+/*PROJECT SECTION BOTTOM RIGHT*/
+
+.index-list {
+    float: right;
+    position: absolute;
+    bottom: 2em;
+    right: 2em;
+    margin-top: 16em;
+    /*    padding-right: 1em;*/
+    width: 30%;
+    min-width: 374px;
+    text-align: left;
+
+}
+
+.index-list li {
+    display: inline-block;
+    width: 100%;
+    text-align: right;
+}
+
+/*PROJECT HEADERS---YEAR/NAME/TYPE*/
+
+.project-headers {
+    padding-bottom: 2em;
+}
+
+.project-headers li {
+    border-bottom: solid 0.1px black;
+}
+
+.index-list ul {
+    padding: 0;
+    margin: 0;
+}
+
+li.project-header-year {
+    width: 22%
+}
+
+li.project-header-title {
+    width: 49%
+}
+
+li.project-header-type {
+    width: 25%
+}
+
+/*INDIVIDUAL PROJECT ENTRIES*/
+
+li.project-year {
+    width: 22%
+}
+
+li.project-name {
+    width: 49%
+}
+
+li.project-type {
+    width: 25%
+}
+
+.index-list a {
+    font-size: 14px;
+    text-align: right;
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 1em;
+
+}
+
+.project-entry .project-name:hover {
+    text-decoration: line-through;
+}
+
+/*PROJECT PREVIEW RIGHT SIDE*/
+
+.index-thumb {
+    margin-top: 3em;
+    position: fixed;
+    top: 6px;
+    left: 0;
+    max-width: 33.33%;
+    max-height: 300px;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+
+}
+
+.index-thumb img {
+    margin-top: 3em;
+    margin-left: 2em;
+    width: auto;
+    height: auto;
+    max-width: 600px;
+    max-height: 650px;
+}
+
+/*IF PROJECT ITEM HOVER, IMAGE APPEAR*/
+
+.index-row:hover > .index-thumb {
+    opacity: 1;
+    -webkit-transition: opacity .15s ease-in-out;
+    -moz-transition: opacity .15s ease-in-out;
+    -ms-transition: opacity .15s ease-in-out;
+    -o-transition: opacity .15s ease-in-out;
+    transition: opacity .15s ease-in-out;
+}
+
+.index-row:hover > .index-thumb:hover {
+    opacity: 0;
+}
+
+.index-row a {
+    text-decoration: none;
+    color: black;
+}
+
+
+@media screen and (orientation: portrait) {}
