@@ -1,0 +1,71 @@
+.landing-images {
+    width: 30%;
+}
+
+.landing-images img {
+    display: block;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 23%;
+}
+
+
+
+#landing-image2 {
+    margin-left: 8rem;
+    bottom: 8rem;
+}
+
+.bio-description {
+    margin-bottom: 2em;
+}
+
+.bio-description p {
+    font-style: italic;
+
+}
+
+.bio-description a {
+    text-decoration: none;
+    color: black;
+}
+
+.bio {
+    padding-top: 16em;
+    padding-right: 2em;
+    width: 40%;
+    float: right;
+}
+
+@media only screen and (max-width: 600px) {
+    .bio {
+        padding: 0 1em;
+        float: none;
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    .bio p a {
+
+
+    }
+
+
+    #landing-image2 {
+        display: none;
+    }
+    .landing-images {
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+    }
+    .landing-images img {
+
+        text-align: center;
+        float: none;
+        position: static;
+        width: 50%;
+        padding: 2em 1em;
+    }
+}

@@ -1,0 +1,194 @@
+.project-nav {
+    position: fixed;
+    padding-top: 15em;
+    padding-left: 2em;
+}
+
+/*#zero,*/
+
+#one,
+#two,
+#three,
+#four,
+#five,
+#six,
+#seven,
+#eight {
+    /*    height: 100vh;*/
+    margin-bottom: 5em;
+}
+
+
+video {
+    padding-top: 2em;
+    width: 100%;
+    height: auto;
+}
+
+.part {
+    height: 100vh;
+}
+
+#img-one {
+    height: 100vh;
+}
+
+.project-content h1 {
+    font-size: 80px;
+}
+
+.project-nav h3 {
+    text-decoration: underline;
+    padding-bottom: 1em;
+}
+
+.project-nav ul {
+    padding-left: 0;
+}
+
+.project-nav li {
+    list-style: none;
+    padding-bottom: 1em;
+}
+
+.project-nav a {
+    /*    font-size: 1em;*/
+}
+
+.project-nav a:hover {
+    text-decoration: line-through;
+}
+
+/*MAIN DIV */
+
+.project-container {
+    display: block;
+    width: 100%;
+}
+
+.project-team ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-team li {
+    padding-bottom: 0.5em
+}
+
+/*/SUB DIV: HOLD EACH PROJECT*/
+
+#zero .project-content {
+    padding-top: 5%;
+    margin-bottom: 4em;
+}
+
+
+.project-team {
+    width: 40%;
+    display: inline-block;
+
+}
+
+.project-role {
+    width: 50%;
+    display: inline-block;
+}
+
+.project-content {
+    display: block;
+    width: 42%;
+    float: right;
+    clear: both;
+    padding-right: 1em;
+    padding-top: 10%;
+}
+
+.project-content img {
+    margin: 1.5em 0em;
+    width: 100%;
+}
+
+.project-image {
+    clear: both;
+    display: block;
+    width: 40%;
+    float: right;
+}
+
+
+.project-image img {
+    float: right;
+    width: 97%;
+    padding-top: 0;
+}
+
+.project-content h3 {
+    border-bottom: solid 1px black;
+    margin-bottom: 1.5em;
+}
+
+.project-content-right p {
+    text-align: justify;
+}
+
+.project-horizontal-image {
+    clear: both;
+    display: block;
+    width: 45%;
+    float: right;
+}
+
+
+.project-horizontal-image img {
+    float: right;
+    width: 97%;
+    padding-top: 0;
+}
+
+
+.project-content-right p {
+    text-align: justify;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+    #one,
+    #two,
+    #three,
+    #four,
+    #five,
+    #six {
+        height: 100%;
+
+        padding: 0 1em;
+    }
+
+    .project-nav {
+        display: none;
+    }
+
+    .project-content {
+        width: 100%;
+        float: none;
+        padding-top: 40%;
+
+
+    }
+    .project-image {
+        width: 100%;
+        height: auto;
+        float: none;
+        padding: 4em, 2em;
+    }
+    .project-image img {
+        width: 100%;
+        float: none;
+        text-align: center;
+        padding-top: 0;
+    }
+
+}
