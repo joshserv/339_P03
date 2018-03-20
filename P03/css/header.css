@@ -8,27 +8,27 @@ footer:after {
 #name-tag {
     float: left;
     z-index: 100;
-    margin: 0;
-    padding: 0;
+
 }
 
 #main-nav {
-    padding: 1em 1em;
+    padding: 0 1em 2.8em 1em;
+    width: 100%;
 
 }
 
 #main-nav ul {
-    padding-left: 0;
-    margin: 0;
+
     clear: none;
     float: right;
+    padding: 0;
 
 }
 
 #main-nav li {
     display: inline-block;
-    margin-left: 3rem;
-    margin-bottom: 0;
+    padding-left: 2.5rem;
+
 }
 
 #main-nav a {
@@ -39,7 +39,7 @@ footer:after {
     font-weight: 200;
     letter-spacing: 0.05rem;
     border-bottom: none;
-    color: lightgray;
+    color: black;
 }
 
 #main-nav a:hover {
@@ -54,4 +54,9 @@ footer:after {
 
 #name-tag a:hover {
     text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    #main-nav {}
+
 }
