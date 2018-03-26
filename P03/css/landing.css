@@ -1,0 +1,118 @@
+#landing-body {
+    /*    background-color: #fa5643;*/
+}
+
+.landing-container {
+    width: 100%;
+    margin-bottom: 5rem;
+}
+
+.landing-items {
+    padding-top: 12%;
+    padding-left: 6rem;
+}
+
+.landing-items h1 {
+    margin-top: 4rem;
+}
+
+.landing-items a:hover {
+    color: rgba(0, 0, 0, 0.6);
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.featured-project {
+    position: relative;
+    height: 80vh;
+}
+
+.project-content-top {
+    display: block;
+    width: 70%;
+    float: right;
+    clear: both;
+    overflow: auto;
+    padding-right: 4rem;
+    padding-top: 0%;
+}
+
+
+.featured-project img {
+    /*    height: auto;*/
+    max-width: 22%;
+    max-height: auto;
+    position: absolute;
+    top: 0%;
+    /*    left: -14%;*/
+    right: 30rem;
+    bottom: 0;
+    margin: auto;
+    display: block;
+    z-index: 0;
+}
+
+
+.featured-project h1 {
+
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 40%;
+    display: inline-block;
+    text-align: left;
+    z-index: 0;
+    line-height: 0.90em;
+    text-transform: uppercase;
+}
+
+
+.featured-project a:hover {
+    opacity: 0.5;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .landing-items {
+        padding-left: 1rem;
+    }
+
+    .featured-project {
+        position: relative;
+        height: 50vh;
+    }
+
+    .featured-project .project-content {
+        padding-top: 0;
+    }
+
+    .featured-project h1 {
+        left: 1rem;
+        bottom: 35%;
+    }
+
+    .featured-project h2 {
+        left: 1rem;
+        bottom: 25%;
+    }
+
+    .featured-project img {
+        /*    height: auto;*/
+        max-width: 52%;
+        max-height: auto;
+        position: absolute;
+        top: 0%;
+        /*    left: -14%;*/
+        right: 0rem;
+        bottom: 0;
+        margin: auto;
+        display: block;
+        z-index: 0;
+    }
+}

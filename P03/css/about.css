@@ -1,28 +1,45 @@
+#about-page {
+    /*    background-color: #f6df81;*/
+}
+
 .landing-images {
     width: 30%;
 }
 
 .landing-images img {
     display: block;
-    position: fixed;
-    left: 0;
+    position: absolute;
+    right: 0;
     bottom: 0;
-    width: 23%;
+    width: 28%;
 }
 
 
 
 #landing-image2 {
-    margin-left: 8rem;
+    margin-right: 8rem;
     bottom: 8rem;
 }
 
+.bio-content {
+    /*
+    position: relative;
+    left: 150%;
+*/
+    margin-left: 5rem;
+    text-align: justify;
+}
+
 .bio-description {
-    margin-bottom: 2em;
+
+    margin-bottom: 2rem;
+    display: block;
+    clear: both;
 }
 
 .bio-description p {
     font-style: italic;
+
 
 }
 
@@ -32,10 +49,13 @@
 }
 
 .bio {
-    padding-top: 16em;
-    padding-right: 2em;
-    width: 40%;
-    float: right;
+    height: 100vh;
+    display: block;
+    padding-top: 9rem;
+    padding-right: 4rem;
+    width: 50%;
+    clear: both;
+    margin-bottom: 5rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -44,18 +64,22 @@
         float: none;
         width: 100%;
         margin-bottom: 2em;
+        clear: both;
     }
 
-    .bio p a {
+    .bio-content {
 
-
+        margin-left: 0rem;
+        text-align: justify;
     }
+
 
 
     #landing-image2 {
         display: none;
     }
     .landing-images {
+
         margin-right: auto;
         margin-left: auto;
         width: 100%;
@@ -65,7 +89,13 @@
         text-align: center;
         float: none;
         position: static;
-        width: 50%;
-        padding: 2em 1em;
+        width: 60%;
+        margin: 6rem 1rem 2rem;
+    }
+
+    .bio-content {
+
+        margin-left: 1rem;
+        text-align: left;
     }
 }

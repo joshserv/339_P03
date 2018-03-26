@@ -2,11 +2,13 @@
 
 @import url("header.css");
 @import url("about.css");
+@import url("footer.css");
 
 /*PAGE SPECIFIC STYLESHEET*/
 
 @import url("project.css");
-
+@import url("landing.css");
+@import url("off-white.css");
 /*GOOGLE FONTS*/
 
 @import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400');
@@ -23,20 +25,28 @@
 
     font-family: 'Adobe Garamond';
     src: url("css/fonts/AGaramondPro-Regular.otf");
+
+    font-family: 'Arial';
+    src: url("css/fonts/Arial.ttf");
 }
 
 * {
     box-sizing: border-box;
 }
 
+html,
+body {
+    height: 100%;
+}
 
 body {
     margin: 0;
     padding: 0;
-    padding-bottom: 5em;
+    padding-bottom: 5rem;
     width: 100%;
-    font-family: 'Cutive Mono', monospace;
-    background-color: rgb(245, 245, 245);
+    font-family: Helvetica, monospace;
+    font-weight: 600;
+    /*    background-color: rgb(245, 245, 245);*/
 }
 
 /*
@@ -46,23 +56,39 @@ body {
 */
 
 header {
-    padding-bottom: 2rem;
+    z-index: 100;
     clear: both;
+}
+
+.grid-col-1of2 {
+    width: 50%;
+}
+
+#main-nav {
+    z-index: 100;
+}
+
+h1 {
+    font-size: 5.5rem;
+    font-weight: 600;
+    line-height: 5rem;
+
 }
 
 h1,
 h2 {
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif;
     color: black;
+    text-transform: uppercase;
 }
 
 h2 {
-    font-size: 16px;
+    font-size: 1.5rem;
 }
 
 h3 {
-    font-weight: 400;
-    font-size: 14px;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 h4 {
@@ -70,26 +96,30 @@ h4 {
 }
 
 p {
-    font-size: 14px;
-    line-height: 1.5em;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.6rem;
 }
-
-
 
 
 a {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 3rem;
     color: black;
-    line-height: 1.5em;
+    line-height: 4rem;
+    font-family: Helvetica, sans-serif;
+}
+
+.nav a {
+    text-transform: uppercase;
 }
 
 /*PROJECT SECTION BOTTOM RIGHT*/
 
 .index-list {
-    margin-top: 16em;
-    margin: 16em 1em 0em 1em;
-    width: 50%;
+    margin-top: 16rem;
+    margin: 16rem 1rem 0 6rem;
+    width: 80%;
 
 }
 
@@ -102,11 +132,11 @@ a {
 /*PROJECT HEADERS---YEAR/NAME/TYPE*/
 
 .project-headers {
-    padding-bottom: 2em;
+    padding-bottom: 2rem;
 }
 
 .project-headers h2 {
-    margin-bottom: 1.5em;
+    margin-bottom: 1.5rem;
 }
 
 .project-headers li {
@@ -144,30 +174,49 @@ li.project-type {
     width: 20%
 }
 
+
+
+.index-list h2 {
+    padding-bottom: 2rem;
+}
+
 .index-list a {
     text-align: left;
     display: inline-block;
     width: 100%;
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
 
 }
+
+
 
 .project-entry {
-    z-index: 100;
+    z-index: 1;
+
 }
 
-.project-entry .project-name:hover {
-    text-decoration: line-through;
+a.project-entry {
+    padding: 0;
+}
+
+.project-entry:hover {
+    color: rgba(0, 0, 0, 0.6);
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+
 }
 
 /*PROJECT IMAGE RIGHT SIDE*/
 
 .index-thumb {
+    z-index: 2;
     float: right;
-    margin-top: 3em;
+    margin-top: 0;
     position: fixed;
-    top: 5em;
-    right: 2em;
+    top: 0;
+    right: 0;
     max-width: 20.33%;
     max-height: 300px;
     height: auto;
@@ -177,23 +226,25 @@ li.project-type {
 }
 
 .index-thumb img {
+    z-index: 2;
 
     float: right;
-    margin-top: 3em;
+    margin-top: 0;
     width: auto;
     height: auto;
     max-width: 600px;
-    max-height: 650px;
+    max-height: 100vh;
 }
 
 /*PROJECT DESCRIPTION BOTTOM LEFT*/
 
 .thumb-description {
-    float: left;
-    margin-top: 3em;
+    z-index: 100;
+    float: right;
+    margin-top: 3rem;
     position: fixed;
-    bottom: 5em;
-    left: 2em;
+    bottom: 4rem;
+    right: 2rem;
     height: auto;
     width: 40%;
     opacity: 0;
@@ -202,8 +253,8 @@ li.project-type {
 
 .thumb-description p {
 
-    float: left;
-    margin-top: 3em;
+    float: right;
+    margin-top: 3rem;
     width: 50%;
     height: auto;
 }
@@ -213,7 +264,7 @@ li.project-type {
 .index-row:hover > .index-thumb {
 
     opacity: 1;
-    z-index: 1;
+    z-index: 2;
     -webkit-transition: opacity .85s ease-in-out;
     -moz-transition: opacity .85s ease-in-out;
     -ms-transition: opacity .85s ease-in-out;
@@ -222,6 +273,7 @@ li.project-type {
 }
 
 .index-row:hover > .index-thumb:hover {
+
     opacity: 0;
     -webkit-transition: opacity .85s ease-in-out;
     -moz-transition: opacity .85s ease-in-out;
@@ -233,7 +285,7 @@ li.project-type {
 .index-row:hover > .thumb-description {
 
     opacity: 1;
-    z-index: 1;
+    z-index: 2;
     -webkit-transition: opacity .85s ease-in-out;
     -moz-transition: opacity .85s ease-in-out;
     -ms-transition: opacity .85s ease-in-out;
@@ -254,25 +306,39 @@ li.project-type {
 
 @media only screen and (max-width: 600px) {
 
-    p,
-    a {
-        font-size: 12px;
+    h1 {
+        font-size: 3rem;
+        line-height: 3rem;
     }
 
-    .project-headers li {
-        font-size: 14px;
-        font-style: italic;
-        text-transform: uppercase;
+    p,
+    a {
+        font-size: 1rem;
+    }
+
+    a {
+        line-height: 1rem;
     }
 
     .index-list {
         margin: 0;
         padding: 0;
-        padding-top: 5em;
-        padding-left: 1em;
+        padding-top: 5rem;
+        padding-left: 1rem;
         width: 100%;
         text-align: left;
     }
+
+    a.project-entry {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+    }
+
+    .project-headers li {
+        font-size: 14px;
+    }
+
 
     .index-list li {
         display: inline-block;
@@ -281,41 +347,30 @@ li.project-type {
 
     .project-headers {
         max-width: 100%;
-        padding: 1em 0;
+        padding: 1rem 0;
     }
 
     .project-headers li {
         border-bottom: none;
     }
 
-    li.project-header-year {
-        width: 15%
-    }
+
     li.project-header-type {
-        width: 20%
+        display: none;
     }
 
     li.project-header-title {
-        width: 55%
+        width: 100%
     }
 
-
-    li.project-header-type {
-        width: 20%
-    }
 
     /*    INDIVIDUAL PROJECT ENTRIES*/
-    li.project-year {
-        width: 15%;
-    }
-
-
     li.project-name {
-        width: 55%;
+        width: 100%;
     }
 
     li.project-type {
-        width: 15%;
+        display: none;
 
     }
 

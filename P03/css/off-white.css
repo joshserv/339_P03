@@ -1,0 +1,13 @@
+.off-white-container {
+    width: 100%;
+}
+
+.off-white-item {
+    float: right;
+    width: 35%;
+}
+
+.off-white-item img {
+    width: 100%;
+    margin-bottom: 4em;
+}

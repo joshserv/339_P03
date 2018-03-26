@@ -6,157 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Joshua</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/fonts.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
     <script src="/js/image.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:300,400" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
 </head>
 
-<body>
-    <header>
 
+<body id="landing-body">
+
+
+    <header>
         <nav id="main-nav">
-            <h2 id="name-tag"><a href="landing.html">JOSHUA SERVILLON</a></h2>
+            <div class="header-logo">
+                <a href="index.html"><img src="img/js-logo.png" alt="logo"></a>
+            </div>
             <ul>
-                <li><a href="index.html"> Index </a></li>
+                <li><a href="projects.html"> Index </a></li>
                 <li><a href="about.html"> About </a></li>
             </ul>
         </nav>
 
     </header>
 
-
-
-
-    <div class="index-list">
-        <div class="project-headers">
-            <ul>
-                <li class="project-header-year"> Year </li>
-                <li class="project-header-title"> Project </li>
-                <li class="project-header-type">Type</li>
-            </ul>
-        </div>
-
-        <div class="projects">
-
-            <div class="index-row">
-                <div class="index-thumb">
-                    <img src="img/yelp-index-image.png" alt="1">
-                </div>
-                <div class="thumb-description">
-                    <p>A function that reduces cognitive overhead by putting relevant information side by side so that the person using Yelp can efficiently make a decision between a limited amount of options.</p>
-                </div>
-                <a class="project-entry" href="yelp.html">
-                    <ul>
-                        <li class="project-year">
-                            2018
-                        </li>
-                        <li class="project-name">
-                            Yahoo: Feature Design
-                        </li>
-                        <li class="project-type">
-                            Experience
-                        </li>
-                    </ul>
-                </a>
-            </div>
-            <!--HEAD SET-->
-            <div class="index-row">
-                <div class="index-thumb">
-                    <img class="offwhite" src="img/projects/vr-headset/download-1.jpg" alt="1">
-                </div>
-                <div class="thumb-description">
-                    <p>The Virtual Reality Medset is designed for practicing medical students with purpose to simulate medical operations to allow students to practice in a virtual environment.</p>
-                </div>
-
-
-                <a class="project-entry" href="vr-headset.html">
-                    <ul>
-                        <li class="project-year">
-                            2017
-                        </li>
-                        <li class="project-name">
-                            VR Medset
-                        </li>
-                        <li class="project-type">
-                            Material
-                        </li>
-                    </ul>
-                </a>
-
-            </div>
-            <!--OGLE-->
-            <div class="index-row">
-                <div class="index-thumb">
-                    <img src="img/projects/ogle/ogle-preview.png" alt="1">
-                </div>
-
-                <a class="project-entry" href="">
-                    <ul>
-                        <li class="project-year">
-                            2018
-                        </li>
-                        <li class="project-name">
-                            Ogle
-                        </li>
-                        <li class="project-type">
-                            Branding
-                        </li>
-                    </ul>
-                </a>
-
-            </div>
-
-            <!--OFF WHITE-->
-            <div class="index-row">
-                <div class="index-thumb">
-                    <img src="img/art-direction/Off-white-jordan.png" alt="1">
-                </div>
-
-                <a class="project-entry" href="off-white-series.html">
-                    <ul>
-                        <li class="project-year">
-                            2018
-                        </li>
-                        <li class="project-name">
-                            Re-imagined Series
-                        </li>
-                        <li class="project-type">
-                            Digital
-                        </li>
-                    </ul>
-                </a>
-            </div>
-
-            <!--YAHOO UI-->
-
-
-            <!--            HPR HIKING RESOURCE-->
-            <div class="index-row">
-                <div class="index-thumb">
-                    <img src="img/art-direction/Off-white-jordan.png" alt="1">
-                    <p></p>
-                </div>
-                <a class="project-entry" href="">
-                    <ul>
-                        <li class="project-year">
-                            2018
-                        </li>
-                        <li class="project-name">
-                            HPR: coming soon...
-                        </li>
-                        <li class="project-type">
-                            UX
-                        </li>
-                    </ul>
-                </a>
-            </div>
-
-            <!--ILLUSTRATIONS-->
-
+    <div class="landing-container">
+        <div class="landing-items">
+            <h1>Joshua Servillon <br> — <br>visual designer <br> graphic artist <br>Vancouver, CA.</h1>
+            <a href="projects.html">view work</a>
         </div>
     </div>
+
+    <section class="featured-project" id="yelp-color">
+        <a href="yelp.html">
+            <div class="project-content-top">
+                <img src="img/projects/yelp-mock5.png">
+                <h1>Yelp <br> Feature <br> Design</h1>
+            </div>
+        </a>
+    </section>
+
+    <section class="featured-project" id="vr-color">
+        <a href="vr-headset.html">
+            <div class="project-content-top">
+                <img src="img/projects/vr-headset/download-2.jpg">
+                <h1>Virtual <br> Reality <br> Medset</h1>
+            </div>
+        </a>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-item"><img src="img/js-logo.png" alt="logo"></div>
+            <div class="footer-item">
+                <ul>
+                    <li>github</li>
+                    <li>citations</li>
+                    <li>styleguide</li>
+                </ul>
+            </div>
+            <div class="footer-item">
+                <p><a href="">instagram</a></p>
+            </div>
+            <div class="footer-item">
+                <p>jservillon@gmail.com</p>
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="scripts/nav.js"></script>
 </body>
 
 </html>
