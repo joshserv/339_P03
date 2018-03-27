@@ -72,6 +72,7 @@ h1 {
     font-size: 5.5rem;
     font-weight: 600;
     line-height: 5rem;
+    text-transform: uppercase;
 
 }
 
@@ -79,11 +80,12 @@ h1,
 h2 {
     font-family: Helvetica, sans-serif;
     color: black;
-    text-transform: uppercase;
+
 }
 
 h2 {
-    font-size: 1.5rem;
+    font-size: 2rem;
+    text-transform: capitalize;
 }
 
 h3 {
