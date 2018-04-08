@@ -9,7 +9,7 @@
 
 .landing-items {
     padding-top: 12%;
-    padding-left: 6rem;
+    padding-left: 8rem;
 }
 
 .landing-items h1 {
@@ -17,7 +17,7 @@
 }
 
 .landing-items a:hover {
-    color: rgba(0, 0, 0, 0.6);
+    color: #f6df81;
     -moz-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -47,7 +47,7 @@
     position: absolute;
     top: 0%;
     /*    left: -14%;*/
-    right: 30rem;
+    right: 34rem;
     bottom: 0;
     margin: auto;
     display: block;
@@ -65,7 +65,7 @@
     text-align: left;
     z-index: 0;
     line-height: 0.90em;
-    text-transform: uppercase;
+    text-transform: none;
 }
 
 

@@ -60,7 +60,13 @@ header {
     clear: both;
 }
 
+.grid-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .grid-col-1of2 {
+    margin: 0;
     width: 50%;
 }
 
@@ -90,17 +96,28 @@ h2 {
 
 h3 {
     font-weight: 600;
-    font-size: 16px;
+    font-size: 1.5rem;
 }
 
 h4 {
-    font-size: 13px;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 p {
-    font-weight: 400;
+    font-weight: 100;
     font-size: 1rem;
-    line-height: 1.6rem;
+    line-height: 2rem;
+}
+
+li {
+    padding: 0.5rem 0;
+    font-weight: 200;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
 }
 
 
@@ -118,83 +135,57 @@ a {
 
 /*PROJECT SECTION BOTTOM RIGHT*/
 
+.vertical-header {
+    position: absolute;
+    bottom: -13.5rem;
+    left: 0em;
+    z-index: 999999;
+    text-transform: uppercase;
+    text-align: right;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+}
+
+#landing {
+    height: 100vh;
+}
+
+#project {
+    position: relative;
+    height: 100vh;
+}
+
 .index-list {
-    margin-top: 16rem;
-    margin: 16rem 1rem 0 6rem;
+    padding: 5rem 1rem 0 8rem;
     width: 80%;
-
 }
 
-.index-list li {
-    display: inline-block;
-    width: 100%;
-    text-align: left;
+
+.index-row a {
+    font-size: 5.5rem;
+    line-height: 5.5rem;
+    text-decoration: none;
+    color: black;
 }
 
-/*PROJECT HEADERS---YEAR/NAME/TYPE*/
-
-.project-headers {
-    padding-bottom: 2rem;
-}
-
-.project-headers h2 {
+.index-row h2 {
+    padding-bottom: 0rem;
     margin-bottom: 1.5rem;
-}
-
-.project-headers li {
-    border-bottom: solid 0.1px black;
-}
-
-.index-list ul {
-    padding: 0;
-    margin: 0;
-}
-
-li.project-header-year {
-    width: 20%
-}
-
-li.project-header-title {
-    width: 50%
-}
-
-li.project-header-type {
-    width: 20%
-}
-
-/*INDIVIDUAL PROJECT ENTRIES*/
-
-li.project-year {
-    width: 20%
-}
-
-li.project-name {
-    width: 50%
-}
-
-li.project-type {
-    width: 20%
-}
-
-
-
-.index-list h2 {
-    padding-bottom: 2rem;
 }
 
 .index-list a {
     text-align: left;
     display: inline-block;
     width: 100%;
-    padding-bottom: 1rem;
 
 }
 
-
-
 .project-entry {
-    z-index: 1;
 
+    z-index: 1;
 }
 
 a.project-entry {
@@ -202,7 +193,7 @@ a.project-entry {
 }
 
 .project-entry:hover {
-    color: rgba(0, 0, 0, 0.6);
+    color: #f6df81;
     -moz-transition: all 0.5s;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -219,8 +210,8 @@ a.project-entry {
     position: fixed;
     top: 0;
     right: 0;
-    max-width: 20.33%;
-    max-height: 300px;
+    max-width: 10.33%;
+    max-height: 100px;
     height: auto;
     width: 100%;
     opacity: 0;
@@ -234,31 +225,8 @@ a.project-entry {
     margin-top: 0;
     width: auto;
     height: auto;
-    max-width: 600px;
+    max-width: 400px;
     max-height: 100vh;
-}
-
-/*PROJECT DESCRIPTION BOTTOM LEFT*/
-
-.thumb-description {
-    z-index: 100;
-    float: right;
-    margin-top: 3rem;
-    position: fixed;
-    bottom: 4rem;
-    right: 2rem;
-    height: auto;
-    width: 40%;
-    opacity: 0;
-
-}
-
-.thumb-description p {
-
-    float: right;
-    margin-top: 3rem;
-    width: 50%;
-    height: auto;
 }
 
 /*IF PROJECT ITEM HOVER, IMAGE APPEAR*/
@@ -300,9 +268,14 @@ a.project-entry {
 }
 
 
-.index-row a {
-    text-decoration: none;
-    color: black;
+@media only screen and (max-width: 1000px) {
+    /*
+    .index-row a {
+        line-height: 5rem;
+        text-decoration: none;
+        color: black;
+    }
+*/
 }
 
 
@@ -313,71 +286,39 @@ a.project-entry {
         line-height: 3rem;
     }
 
-    p,
-    a {
+    p {
         font-size: 1rem;
     }
 
     a {
+        font-size: 2rem;
         line-height: 1rem;
     }
+
+
 
     .index-list {
         margin: 0;
         padding: 0;
-        padding-top: 5rem;
+        margin-top: 5rem;
+        padding-top: 2rem;
         padding-left: 1rem;
         width: 100%;
         text-align: left;
     }
 
-    a.project-entry {
-        font-size: 1.8rem;
-        margin-bottom: 1rem;
-        text-transform: uppercase;
+    .index-row a {
+        font-size: 2.5rem;
+        line-height: 2.5rem;
+        text-decoration: none;
+        color: black;
     }
 
-    .project-headers li {
-        font-size: 14px;
+    .vertical-header {
+        bottom: -8rem;
+        left: 1rem;
+        transform: none;
     }
-
-
-    .index-list li {
-        display: inline-block;
-        width: 100%;
-    }
-
-    .project-headers {
-        max-width: 100%;
-        padding: 1rem 0;
-    }
-
-    .project-headers li {
-        border-bottom: none;
-    }
-
-
-    li.project-header-type {
-        display: none;
-    }
-
-    li.project-header-title {
-        width: 100%
-    }
-
-
-    /*    INDIVIDUAL PROJECT ENTRIES*/
-    li.project-name {
-        width: 100%;
-    }
-
-    li.project-type {
-        display: none;
-
-    }
-
-
-
 
     .index-row:hover > .index-thumb {
         opacity: 0;
@@ -387,6 +328,7 @@ a.project-entry {
         -o-transition: opacity .85s ease-in-out;
         transition: opacity .85s ease-in-out;
     }
+
     .index-thumb {
         display: none
     }

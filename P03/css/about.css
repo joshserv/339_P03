@@ -40,12 +40,19 @@
 .bio-description p {
     font-style: italic;
 
-
 }
 
 .bio-description a {
     text-decoration: none;
     color: black;
+}
+
+.bio-content a {
+    text-decoration: underline;
+    font-size: 1rem;
+    padding: 0;
+    line-height: 1rem;
+    font-weight: 600;
 }
 
 .bio {

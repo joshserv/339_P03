@@ -24,7 +24,7 @@
 */
 
 body {
-    font-family: 'Cutive Mono', monospace;
+    font-family: Helvetica, monospace;
     font-weight: 200;
     padding: 2rem;
 }
@@ -43,7 +43,7 @@ h2 {
 }
 
 h3 {
-    font-family: 'Cutive Mono', monospace;
+    font-family: Helvetica;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.2px;
@@ -59,7 +59,7 @@ section p {
 }
 
 p {
-    font-family: 'Cutive Mono', monospace;
+    font-family: Helvetica;
     line-height: 19px;
     width: 40%;
     font-weight: 400;
@@ -148,7 +148,7 @@ RETRIEVED FROM (https://codepen.io/martinwolf/pen/eNNdme )
     text-decoration: none;
     font-weight: 400;
     font-size: 14px;
-    font-family: 'Cutive Mono', monospace;
+    font-family: Helvetica;
 
     -moz-transition: transform 1s;
     -webkit-transition: transform 1s;
@@ -314,7 +314,7 @@ RETRIEVED FROM (https://codepen.io/yying6/pen/qzlop)
 
 .bg-ol-item p {
     width: 40%;
-    font-family: 'Cutive Mono', monospace;
+    font-family: Helvetica;
     color: black;
     font-size: 14px;
     font-weight: 200;
